@@ -1,4 +1,3 @@
-Attribute VB_Name = "Module1"
 Sub addData()
 Dim i As Long, lastRow As Long, nextBlankRow As Long
 lastRow = Cells.Find(What:="*", _
