@@ -63,13 +63,13 @@ Cells(nextBlankRow, 33) = Range("C36")
 
 'MsgBox nextBlankRow
 Dim p As Long, q As Long
-p = 39
+p = 40
 q = p + 1
 Do While Cells(p, 8) <> ""
     Do While Cells(q, 8) <> ""
         If Cells(p, 8) = Cells(q, 8) And Cells(p, 10) = Cells(q, 10) And Cells(p, 14) = Cells(q, 14) Then
             MsgBox "Duplicate Data! Will be removed from database!"
-            Range(Cells(q, 7), Cells(q, 38)).ClearContents
+            Range(Cells(q, 2), Cells(q, 33)).ClearContents
         Else
         q = q + 1
         End If
